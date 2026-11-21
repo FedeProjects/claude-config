@@ -1,0 +1,7 @@
+# This repo lives in ~/.claude: track only the shared config, ignore everything else
+/*
+!/.gitignore
+!/README.md
+!/CLAUDE.md
+!/skills/
+/skills/synced/
