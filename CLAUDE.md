@@ -18,7 +18,7 @@ Personal defaults for every repo. A project's own CLAUDE.md wins when it says so
 
 - I'm the navigator: I decide scope and approve the spec, the test list, each test and each commit. You're the driver: you propose, implement and run.
 - Business doubt: ask, a few questions at a time. Never choose silently.
-- Never commit or push. Propose the message and the files; I commit.
+- Git: you create branches (from the up-to-date default branch) and commit after I OK the message and files. Push and open PRs after I OK the PR text. Never push to the default branch, never force-push, never merge: I merge.
 - Creating or editing an issue, comment or PR publishes it: show me the text and wait for my OK.
 
 ## Workflow

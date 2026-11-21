@@ -43,4 +43,4 @@ Also add "What not to touch" and confusing domain terms, but only if `/init` lef
 ## 4. Apply
 
 - Show the full diff and wait for my OK.
-- Apply it and propose the commit message (`chore: set up AI workflow` or similar). I commit.
+- Apply it on a new branch (not the default one), show the commit (`chore: set up AI workflow` or similar, and its files) and commit after my OK.

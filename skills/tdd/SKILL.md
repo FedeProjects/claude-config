@@ -37,7 +37,7 @@ You are the driver; I'm the navigator. Input: $ARGUMENTS.
 - Write the minimum code for this test. Nothing the test doesn't require.
 - Run the "fast" checks. If another test breaks, fix the code, never the test.
 - Refactor only with everything green, after the green. If it's not worth it, say so in one line.
-- **CONTROL 2:** the diff and the proposed commits (message and files). Behavior and refactor go in separate commits. If the item completes a criterion, also propose ticking it in the issue. Wait for my OK. I commit.
+- **CONTROL 2:** the diff and the proposed commits (message and files). Behavior and refactor go in separate commits. If the item completes a criterion, also propose ticking it in the issue. Wait for my OK, then commit.
 
 ## Close the item
 
@@ -68,4 +68,4 @@ Emergency exit to continue on another machine:
    ```
    </details>
    ````
-3. Propose a WIP commit (`test: add failing test for <item> (wip)` or similar) and the push. I run them.
+3. Show a WIP commit (`test: add failing test for <item> (wip)` or similar) and its files. After my OK, commit and push the branch.

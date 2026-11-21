@@ -31,7 +31,7 @@ argument-hint: "[#issue]"
   - Title in Conventional Commits.
   - Body: `Closes #N`, a short summary, the decisions, and "How to test" with runnable steps (each long-running command in its own terminal).
   - Show it and wait for my OK.
-- After I push, create it with `gh pr create`.
+- After my OK, push the branch and create it with `gh pr create`. Never merge: I merge.
 - Tell me if the project doesn't merge with squash: the branch's commits will stay in the default branch's history.
 
 ## 5. Clean up
