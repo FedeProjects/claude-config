@@ -30,14 +30,22 @@ You are the driver; I'm the navigator. Input: $ARGUMENTS.
 - The expected value comes from the item, never computed with the same logic as the code.
 - Doesn't compile: add the minimum signature, nothing else.
 - Run it with the "one test" command. It must fail on the assertion, not on compile or setup.
-- **CONTROL 1:** the test, the relevant lines of the red output, and one line with the decision it locks in. Wait for my OK.
+- **CONTROL 1:** the relevant lines of the red output and one line with the decision it locks in. Don't paste the test: I read it in my editor's diff view. Explain a part of it only when it isn't obvious. Wait for my OK.
+
+## Test quality
+
+- Assert on observable results (returned value, stored state, response, log, message sent), not on how the code gets there.
+- Real collaborators by default. Test doubles only at the system's edges (external APIs, email, clock, randomness).
+- `verify` / captors only when the interaction is the behavior (an email is sent, an external API is or isn't called).
+- One behavior per test. Precise assertions: they must fail for the bug the item describes and only for it.
+- Time and randomness are injected (`Clock`, seeds), never `Instant.now()` inside the logic under test.
 
 ## Green
 
 - Write the minimum code for this test. Nothing the test doesn't require.
 - Run the "fast" checks. If another test breaks, fix the code, never the test.
 - Refactor only with everything green, after the green. If it's not worth it, say so in one line.
-- **CONTROL 2:** the diff and the proposed commits (message and files). Behavior and refactor go in separate commits. If the item completes a criterion, also propose ticking it in the issue. Wait for my OK, then commit.
+- **CONTROL 2:** the result of the checks and the proposed commits (message and files). Don't paste the diff: I read it in my editor's diff view. Explain a part of it only when it isn't obvious. Behavior and refactor go in separate commits. If the item completes a criterion, also propose ticking it in the issue. Wait for my OK, then commit.
 
 ## Close the item
 
