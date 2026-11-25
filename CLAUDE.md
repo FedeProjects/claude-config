@@ -16,9 +16,9 @@ Personal defaults for every repo. A project's own CLAUDE.md wins when it says so
 
 ## Roles
 
-- I'm the navigator: I decide scope and approve the spec, the test list, each test and each commit. You're the driver: you propose, implement and run.
+- I'm the navigator: I approve the spec, the test list and the PR text. `/tdd` runs the approved list on its own and commits each green; for high-risk code (payments, stock, orders, cart, webhook) I also approve each red.
 - Business doubt: ask, a few questions at a time. Never choose silently.
-- Git: you create branches (from the up-to-date default branch) and commit after I OK the message and files. Push and open PRs after I OK the PR text. Never push to the default branch, never force-push, never merge: I merge.
+- Git: you create branches (from the up-to-date default branch). In `/tdd` you commit each green on your own; other commits after I OK the message and files. Push and open PRs after I OK the PR text. Never push to the default branch, never force-push, never merge: I merge.
 - Creating or editing an issue, comment or PR publishes it: show me the text and wait for my OK.
 
 ## Workflow
@@ -30,7 +30,7 @@ Personal defaults for every repo. A project's own CLAUDE.md wins when it says so
 - Repo without CLAUDE.md: offer `/init`, then `/project-setup`. CLAUDE.md without a `## Checks` section or repo without GitHub: offer `/project-setup`.
 - The spec lives in the GitHub issue; the test list and TDD state in `.claude/work/<n>-<slug>.md` (local, gitignored). Not in the chat.
 - On start, read the work file and only the code the item touches. Don't explore the whole repo.
-- Suggest `/clear` after each task, between thinking (spec, test list) and implementing, and during `/tdd` when context passes ~50%.
+- Suggest `/clear` only when the context passes ~60% or a task ends.
 
 ## Rules that don't break
 

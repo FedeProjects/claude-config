@@ -36,7 +36,7 @@ Input: $ARGUMENTS (an idea, or `#N` for an existing issue). I bring the requirem
 - Repo without a GitHub remote: stop and offer `/project-setup`.
 - Create it with `gh issue create`, or update `#N` with `gh issue edit`. Labels and milestone only if the project's CLAUDE.md defines them.
 - No personal data, commercial terms or credentials: issues travel with the repo.
-- End with the issue link(s) and: "Next: /clear, then /test-list #N".
+- End with the issue link(s) and: "Next: /test-list #N".
 
 ## Issue format
 
